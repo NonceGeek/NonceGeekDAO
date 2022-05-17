@@ -6,7 +6,7 @@ const heads = ref(['Introduction', 'TaiShang Series', 'Web3.0 dApp Camp', 'Buidl
 
 <template>
     <div class="container">
-        <img src="../assets/home-icon.png" class="home-icon" alt="home">
+        <img src="../assets/home_icon.png" class="home-icon" alt="home">
         <div class="head-item" v-for="item in heads" :key="item">{{ item }}</div>
     </div>
 </template>
@@ -35,7 +35,7 @@ const heads = ref(['Introduction', 'TaiShang Series', 'Web3.0 dApp Camp', 'Buidl
     background-color: #02083C;
     font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 35px;
     border-right: 4px solid #B7E3ED;
     border-bottom: 4px solid #B7E3ED;
 }

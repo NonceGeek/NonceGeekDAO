@@ -1,10 +1,12 @@
 <script setup>
 import Head from './components/Head.vue'
+import Home from './pages/Home.vue'
 </script>
 
 <template>
   <div class="main-bg">
     <Head />
+    <Home />
   </div>
 </template>
 
@@ -13,7 +15,7 @@ body {
   overflow: hidden;
 }
 .main-bg {
-  background-image: url('./assets/main-bg.png');
+  background-image: url('./assets/main_bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
