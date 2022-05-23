@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line {
+    height: 2px;
+    border-top: 1px solid #989898;
+    border-bottom: 1px solid #FFFFFF;
+    margin: 0 auto;
+}
+
+.v-line {
+    width: 2px;
+    border-left: 1px solid #989898;
+    border-right: 1px solid #FFFFFF;
+    margin: 0 auto;
+}
+
+.point {
+    width: 3px;
+    height: 3px;
+    background-color: #02083C;
+    border-radius: 50%;
+}
+
+.top {
+    width: 1108px;
+    height: 49px;
+    background-color: #71B6C6;
+    margin: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

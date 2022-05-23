@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="container">
+    <div class="box">
         <img class="home-bg" src="../assets/home_bg.png" alt="">
         <span class="title">Nonce Geek studio.exe</span>
         <img class="home-icon-big" src="../assets/home_icon_big.png" alt="home icon">
@@ -13,8 +13,9 @@
 </template>
 
 <style scoped>
-.container {
+.box {
     position: relative;
+    height: 100vh;
 }
 
 .home-bg {

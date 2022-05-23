@@ -1,13 +1,38 @@
 <script setup>
 import { ref } from "@vue/reactivity";
+import router from '../router';
 
-const heads = ref(['Introduction', 'TaiShang Series', 'Web3.0 dApp Camp', 'Buidlers', 'Partners', 'About']);
+const heads = ref([{
+    name: 'home',
+    des: 'Introduction',
+}, {
+    name: 'series',
+    des: 'TaiShang Series',
+}, {
+    name: 'camp',
+    des: 'Web3.0 dApp Camp',
+}, {
+    name: 'builders',
+    des: 'Builders',
+}, {
+    name: 'partners',
+    des: 'Partners',
+}, {
+    name: 'about',
+    des: 'About',
+}]);
+
+const nav = (name) => {
+    router.push({ name: name });
+}
 </script>
 
 <template>
     <div class="container">
         <img src="../assets/home_icon.png" class="home-icon" alt="home">
-        <div class="head-item" v-for="item in heads" :key="item">{{ item }}</div>
+        <div class="head-item" v-for="item in heads" :key="item.name" @click="nav(item.name)">{{
+                item.des
+        }}</div>
     </div>
 </template>
 
@@ -23,10 +48,12 @@ const heads = ref(['Introduction', 'TaiShang Series', 'Web3.0 dApp Camp', 'Buidl
     justify-content: space-between;
     align-items: flex-end;
 }
+
 .home-icon {
     width: 142px;
     height: 100%;
 }
+
 .head-item {
     height: 35px;
     padding: 3px 10px;
@@ -39,6 +66,7 @@ const heads = ref(['Introduction', 'TaiShang Series', 'Web3.0 dApp Camp', 'Buidl
     border-right: 4px solid #B7E3ED;
     border-bottom: 4px solid #B7E3ED;
 }
+
 .head-item:hover {
     color: #02083C;
     background-color: white;
