@@ -1,19 +1,25 @@
 <template>
     <div class="flex flex-col justify-center items-center">
-        <div class="follow flex flex-col justify-start items-center">
-            <span class="follow-bar flex justify-center items-center">Follow Us</span>
-            <div class="flex flex-col justify-evenly" style="height: calc(100% - 22px);">
-                <div class="follow-item-box flex justify-center items-center">
-                    <img src="../assets/twitter.png" alt="twitter">
-                </div>
-                <span class="line" style="width: 37px;"></span>
-                <div class="follow-item-box flex justify-center items-center">
-                    <img src="../assets/github.png" alt="github">
-                </div>
-            </div>
-        </div>
 
         <div class="window">
+
+            <div class="follow flex flex-col justify-start items-center">
+                <span class="follow-bar flex justify-center items-center">Follow Us</span>
+                <div class="flex flex-col justify-evenly" style="height: calc(100% - 22px);">
+                    <div class="follow-item-box flex justify-center items-center">
+                        <a href="https://twitter.com/Web3dAppCamp">
+                            <img src="../assets/twitter.png" alt="twitter">
+                        </a>
+                    </div>
+                    <span class="line" style="width: 37px;"></span>
+                    <div class="follow-item-box flex justify-center items-center">
+                        <a href="https://github.com/WeLightProject">
+                            <img src="../assets/github.png" alt="github">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <div class="top">
                 <img src="../assets/tiny_logo.png" alt="">
                 <span>Catalogue.exe</span>
@@ -100,6 +106,7 @@ const camps = ref([
     height: 707px;
     background-color: #D4D4D4;
     margin: 85px auto 0;
+    position: relative;
 }
 
 .top>img {
@@ -193,8 +200,8 @@ const camps = ref([
 
 .follow {
     position: absolute;
-    left: 0;
-    top: 137px;
+    left: -100px;
+    top: 0;
     width: 70px;
     height: 131px;
     background-color: #D4D4D4;

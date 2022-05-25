@@ -1,5 +1,6 @@
 <template>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col justify-between items-center h-screen">
+        <i></i>
         <div class="window">
             <div class="top" style="width: 716px;">
                 <img src="../assets/tiny_logo.png" alt="">

@@ -3,19 +3,28 @@
 </script>
 
 <template>
-    <div class="box">
-        <img class="home-bg" src="../assets/home_bg.png" alt="">
-        <span class="title">Nonce Geek studio.exe</span>
-        <img class="home-icon-big" src="../assets/home_icon_big.png" alt="home icon">
-        <img class="geek-studio" src="../assets/geek_studio.png" alt="geek studio">
-        <img class="sub-bg" src="../assets/sub_bg.png" alt="sub bg">
+    <div class="box center">
+        <div class="window">
+            <img class="home-bg" src="../assets/home_bg.png" alt="">
+            <span class="title">Nonce Geek studio.exe</span>
+            <img class="home-icon-big" src="../assets/home_icon_big.png" alt="home icon">
+            <img class="geek-studio" src="../assets/geek_studio.png" alt="geek studio">
+            <img class="sub-bg" src="../assets/sub_bg.png" alt="sub bg">
+        </div>
+
     </div>
 </template>
 
 <style scoped>
 .box {
-    position: relative;
+    width: calc(100vw - 86px);
     height: 100vh;
+}
+
+.window {
+    position: relative;
+    width: 1202px;
+    height: 563px;
 }
 
 .home-bg {

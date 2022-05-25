@@ -22,24 +22,29 @@ const heads = ref([{
     des: 'About',
 }]);
 
+const clickedItem = ref('home');
+
 const nav = (name) => {
+    clickedItem.value = name;
     router.push({ name: name });
 }
+
 </script>
 
 <template>
-    <div class="container">
+    <div class="box">
         <img src="../assets/home_icon.png" class="home-icon" alt="home">
-        <div class="head-item" v-for="item in heads" :key="item.name" @click="nav(item.name)">{{
-                item.des
-        }}</div>
+        <div :class="{ 'head-item': true, 'head-item-clicked': clickedItem === item.name }" v-for="item in heads"
+            :key="item.name" @click="nav(item.name)">{{
+                    item.des
+            }}</div>
     </div>
 </template>
 
 <style scoped>
-.container {
+.box {
     width: 1120px;
-    height: 52.42px;
+    height: 86.42px;
     margin: 0 auto;
     padding-top: 34px;
     font-family: 'FFF Urban';
@@ -51,7 +56,7 @@ const nav = (name) => {
 
 .home-icon {
     width: 142px;
-    height: 100%;
+    height: 52px;
 }
 
 .head-item {
@@ -67,7 +72,7 @@ const nav = (name) => {
     border-bottom: 4px solid #B7E3ED;
 }
 
-.head-item:hover {
+.head-item-clicked {
     color: #02083C;
     background-color: white;
     border-right: none;

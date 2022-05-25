@@ -119,8 +119,9 @@
                         </div>
 
                     </div>
-                    <i v-if="filtedBuilders.length > 8"></i><i v-if="filtedBuilders.length > 8"></i><i
-                        v-if="filtedBuilders.length > 8"></i>
+                    <i v-if="filtedBuilders.length > 8"></i>
+                    <i v-if="filtedBuilders.length > 8"></i>
+                    <!-- <i v-if="filtedBuilders.length > 8"></i> -->
                 </div>
 
             </div>
