@@ -1,6 +1,5 @@
 <script setup>
 import Head from './components/Head.vue'
-import Home from './pages/Home.vue'
 </script>
 
 <template>
@@ -14,7 +13,8 @@ import Home from './pages/Home.vue'
 <style>
 .main-bg {
   background-image: url('./assets/main_bg.png');
-
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 @font-face {

@@ -1,5 +1,8 @@
 <template>
-    <div class="box">
+    <div class="flex flex-col justify-between items-center">
+
+        <i></i>
+
         <div class="window">
             <div class="top">
                 <img src="../assets/tiny_logo.png" alt="">
@@ -127,12 +130,6 @@ const events = ref([
 </script>
 
 <style scoped>
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .window {
     width: 1120px;
     height: 694px;
