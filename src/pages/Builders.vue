@@ -135,10 +135,21 @@
 <script setup>
 import { ref, computed } from 'vue'
 
+import avatar_lidagou from '../assets/avatar_lidagou.png'
+import avatar_wangningbo from '../assets/avatar_wangningbo.png'
+import avatar_tanghuifeng from '../assets/avatar_tanghuifeng.png'
+import avatar_hewei from '../assets/avatar_hewei.png'
+import avatar_yaoshuoning from '../assets/avatar_yaoshuoning.png'
+import avatar_xiaoyue from '../assets/avatar_xiaoyue.png'
+import avatar_henryliu from '../assets/avatar_henryliu.png'
+import avatar_yekai from '../assets/avatar_yekai.png'
+import avatar_ronger from '../assets/avatar_ronger.png'
+import avatar_huangjie from '../assets/avatar_huangjie.png'
+
 const builders = ref([
     {
         name: '李大狗',
-        img: '/src/assets/avatar_lidagou.png',
+        img: avatar_lidagou,
         des: '面向酷炫编程',
         github: 'https://github.com/leeduckgo',
         achievements: ['1小时理解比特币系统', '区块链与共识机制演变史'],
@@ -146,7 +157,7 @@ const builders = ref([
     },
     {
         name: '王宁波',
-        img: '/src/assets/avatar_wangningbo.png',
+        img: avatar_wangningbo,
         des: '学习区块链开发途中的平头哥',
         github: 'https://github.com/hqwangningbo',
         achievements: ['构建你的第一条Substrate chain并与之交互', 'Substrate-node-template模板中的pallet-template源码分析'],
@@ -154,7 +165,7 @@ const builders = ref([
     },
     {
         name: '汤会枫',
-        img: '/src/assets/avatar_tanghuifeng.png',
+        img: avatar_tanghuifeng,
         des: '懂点区块链和云计算的后端开发',
         github: 'https://github.com/99Kies',
         achievements: ['分布式数字身份-从创建一个Weidentity开始', '理解和验证Pbft共识机制'],
@@ -162,7 +173,7 @@ const builders = ref([
     },
     {
         name: '何伟',
-        img: '/src/assets/avatar_hewei.png',
+        img: avatar_hewei,
         des: '生命不息  学习不止',
         github: 'https://github.com/Dream4ever',
         achievements: ['手写一个音频播放器', '解决 MySQL CPU 占用高的问题'],
@@ -170,7 +181,7 @@ const builders = ref([
     },
     {
         name: '姚溯宁',
-        img: '/src/assets/avatar_yaoshuoning.png',
+        img: avatar_yaoshuoning,
         des: '一直是个非传统的人，数学专业的前端开发',
         github: 'https://github.com/fewwwww',
         achievements: ['浅谈Dfinity的云计算+区块链', 'React组件拖拽改变大小功能'],
@@ -178,7 +189,7 @@ const builders = ref([
     },
     {
         name: '肖越',
-        img: '/src/assets/avatar_xiaoyue.png',
+        img: avatar_xiaoyue,
         des: '一个懂点网络安全和区块链的信安大三学僧',
         github: 'https://github.com/xiaoyue2019',
         achievements: ['合约安全之越权攻击', 'FISCO BCOS多机部署之单群组双机构双节点组网模式'],
@@ -186,7 +197,7 @@ const builders = ref([
     },
     {
         name: 'Henry Liu',
-        img: '/src/assets/avatar_henryliu.png',
+        img: avatar_henryliu,
         des: '到现在都没搞懂啥是区块链的菜鸟',
         github: 'https://github.com/Zoombieliu',
         achievements: [],
@@ -194,7 +205,7 @@ const builders = ref([
     },
     {
         name: '叶开',
-        img: '/src/assets/avatar_yekai.png',
+        img: avatar_yekai,
         des: '非著名区块链技术讲师',
         github: 'https://github.com/yekai1003',
         achievements: ['看过《斯巴达克斯》吗？里面的反派竟是密码学鼻祖', '比特币和区块链的基石：哈希函数'],
@@ -202,7 +213,7 @@ const builders = ref([
     },
     {
         name: '蓉儿',
-        img: '/src/assets/avatar_ronger.png',
+        img: avatar_ronger,
         des: '生成艺术家',
         github: 'https://github.com/lovelyrosa',
         achievements: ['浅谈Dfinity的云计算+区块链', 'React组件拖拽改变大小功能'],
@@ -210,7 +221,7 @@ const builders = ref([
     },
     {
         name: '黄杰',
-        img: '/src/assets/avatar_huangjie.png',
+        img: avatar_huangjie,
         des: '区块链编程爱好者',
         github: 'https://github.com/Blockchain-Key',
         achievements: ['智能合约实例开发（1）——众筹', '智能合约实例开发（2）——食品溯源', '智能合约开发实例（3）——结婚证书'],

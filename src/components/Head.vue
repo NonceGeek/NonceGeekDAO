@@ -14,7 +14,12 @@ const heads = ref([{
 }, {
     name: 'builders',
     des: 'Builders',
-}, {
+},
+{
+    name: 'artist',
+    des: 'Artist',
+},
+{
     name: 'partners',
     des: 'Partners',
 }, {
@@ -43,7 +48,7 @@ const nav = (name) => {
 
 <style scoped>
 .box {
-    width: 1120px;
+    width: 1200px;
     height: 86.42px;
     margin: 0 auto;
     padding-top: 34px;

@@ -1,8 +1,6 @@
 <template>
     <div class="flex flex-col justify-between items-center">
 
-        <i></i>
-
         <div class="window">
             <div class="top">
                 <img src="../assets/tiny_logo.png" alt="">
@@ -321,5 +319,6 @@ const events = ref([
 .series-bottom {
     width: 1117px;
     height: 46px;
+    margin-top: 100px;
 }
 </style>

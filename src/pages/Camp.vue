@@ -228,5 +228,6 @@ const camps = ref([
 .camp-bottom {
     width: 1117px;
     height: 46px;
+    margin-top: 100px;
 }
 </style>
