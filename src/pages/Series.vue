@@ -132,7 +132,7 @@ const events = ref([
     width: 1120px;
     height: 694px;
     background-color: #E7E7E7;
-    margin: 97px auto 0;
+    margin: 115px auto 0;
 }
 
 .top {
@@ -280,8 +280,6 @@ const events = ref([
     color: #02083C;
     width: 140px;
 }
-
-.award-right {}
 
 .award-right-top {
     width: 495px;

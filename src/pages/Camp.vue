@@ -105,7 +105,7 @@ const camps = ref([
     width: 1120px;
     height: 707px;
     background-color: #D4D4D4;
-    margin: 85px auto 0;
+    margin: 115px auto 0;
     position: relative;
 }
 
