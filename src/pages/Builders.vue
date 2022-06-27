@@ -1,12 +1,10 @@
 <template>
     <div class="flex flex-col justify-center items-center">
-
         <div class="window">
             <div class="top">
                 <img src="../assets/tiny_logo.png" alt="">
                 <span>Buidlers.exe</span>
             </div>
-
             <div class="content flex flex-col items-center">
                 <span class="content-title">Buidlers</span>
                 <span class="line" style="width: 193px; margin-bottom: 18px;"></span>
@@ -102,9 +100,9 @@
                             <div></div>
                             <div></div>
                         </div>
-                        <img :src="item.img" alt="">
+                        <img :src="item.avatar" alt="">
                         <span class="name">{{ item.name }}</span>
-                        <span class="des">{{ item.des }}</span>
+                        <span class="des">{{ item.description }}</span>
                         <div class="github flex">
                             <img src="../assets/github.png" alt="">
                             <span>{{ item.github }}</span>
@@ -112,7 +110,7 @@
                         <div class="line" style="width: 208px;"></div>
                         <div class="achi-item flex items-start" v-for="achi in item.achievements" :key="achi">
                             <div class="point" style="margin-top: 8px; margin-right: 5px;"></div>
-                            <div>{{ achi }}</div>
+                            <a :href="achi.url">{{ achi.title }}</a>
                         </div>
                         <div class="flex justify-end w-full mr-5 mb-2.5">
                             <div class="tag-item" v-for="t in item.tag" :key="t">{{ t }}</div>
@@ -121,7 +119,6 @@
                     </div>
                     <i v-if="filtedBuilders.length > 8"></i>
                     <i v-if="filtedBuilders.length > 8"></i>
-                    <!-- <i v-if="filtedBuilders.length > 8"></i> -->
                 </div>
 
             </div>
@@ -133,101 +130,13 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { fetchBuilders } from '../utils'
 
-import avatar_lidagou from '../assets/avatar_lidagou.png'
-import avatar_wangningbo from '../assets/avatar_wangningbo.png'
-import avatar_tanghuifeng from '../assets/avatar_tanghuifeng.png'
-import avatar_hewei from '../assets/avatar_hewei.png'
-import avatar_yaoshuoning from '../assets/avatar_yaoshuoning.png'
-import avatar_xiaoyue from '../assets/avatar_xiaoyue.png'
-import avatar_henryliu from '../assets/avatar_henryliu.png'
-import avatar_yekai from '../assets/avatar_yekai.png'
-import avatar_ronger from '../assets/avatar_ronger.png'
-import avatar_huangjie from '../assets/avatar_huangjie.png'
-
-const builders = ref([
-    {
-        name: '李大狗',
-        img: avatar_lidagou,
-        des: '面向酷炫编程',
-        github: 'https://github.com/leeduckgo',
-        achievements: ['1小时理解比特币系统', '区块链与共识机制演变史'],
-        tag: ['Solidity'],
-    },
-    {
-        name: '王宁波',
-        img: avatar_wangningbo,
-        des: '学习区块链开发途中的平头哥',
-        github: 'https://github.com/hqwangningbo',
-        achievements: ['构建你的第一条Substrate chain并与之交互', 'Substrate-node-template模板中的pallet-template源码分析'],
-        tag: ['scaffold-eth'],
-    },
-    {
-        name: '汤会枫',
-        img: avatar_tanghuifeng,
-        des: '懂点区块链和云计算的后端开发',
-        github: 'https://github.com/99Kies',
-        achievements: ['分布式数字身份-从创建一个Weidentity开始', '理解和验证Pbft共识机制'],
-        tag: ['Solidity', 'scaffold-eth'],
-    },
-    {
-        name: '何伟',
-        img: avatar_hewei,
-        des: '生命不息  学习不止',
-        github: 'https://github.com/Dream4ever',
-        achievements: ['手写一个音频播放器', '解决 MySQL CPU 占用高的问题'],
-        tag: ['scaffold-eth'],
-    },
-    {
-        name: '姚溯宁',
-        img: avatar_yaoshuoning,
-        des: '一直是个非传统的人，数学专业的前端开发',
-        github: 'https://github.com/fewwwww',
-        achievements: ['浅谈Dfinity的云计算+区块链', 'React组件拖拽改变大小功能'],
-        tag: ['Solidity'],
-    },
-    {
-        name: '肖越',
-        img: avatar_xiaoyue,
-        des: '一个懂点网络安全和区块链的信安大三学僧',
-        github: 'https://github.com/xiaoyue2019',
-        achievements: ['合约安全之越权攻击', 'FISCO BCOS多机部署之单群组双机构双节点组网模式'],
-        tag: ['Solidity'],
-    },
-    {
-        name: 'Henry Liu',
-        img: avatar_henryliu,
-        des: '到现在都没搞懂啥是区块链的菜鸟',
-        github: 'https://github.com/Zoombieliu',
-        achievements: [],
-        tag: ['Solidity'],
-    },
-    {
-        name: '叶开',
-        img: avatar_yekai,
-        des: '非著名区块链技术讲师',
-        github: 'https://github.com/yekai1003',
-        achievements: ['看过《斯巴达克斯》吗？里面的反派竟是密码学鼻祖', '比特币和区块链的基石：哈希函数'],
-        tag: ['Solidity'],
-    },
-    {
-        name: '蓉儿',
-        img: avatar_ronger,
-        des: '生成艺术家',
-        github: 'https://github.com/lovelyrosa',
-        achievements: ['浅谈Dfinity的云计算+区块链', 'React组件拖拽改变大小功能'],
-        tag: ['Solidity'],
-    },
-    {
-        name: '黄杰',
-        img: avatar_huangjie,
-        des: '区块链编程爱好者',
-        github: 'https://github.com/Blockchain-Key',
-        achievements: ['智能合约实例开发（1）——众筹', '智能合约实例开发（2）——食品溯源', '智能合约开发实例（3）——结婚证书'],
-        tag: ['Solidity'],
-    }
-])
+const builders = ref([]);
+onMounted(() => {
+    fetchBuilders().then(response => builders.value = response);
+});
 
 let selectedTechs = ref(['Solidity']);
 const isShowSelectContent = ref(true);
@@ -237,19 +146,12 @@ const filtedBuilders = computed(() => {
     });
 });
 
-const filterByTechBuidlers = () => {
-
-}
-
 const onTechChange = (tech) => {
-    console.log(tech);
-    console.log(selectedTechs.value);
     if (selectedTechs.value.includes(tech)) {
         selectedTechs.value = selectedTechs.value.filter(t => t !== tech);
     } else {
         selectedTechs.value.push(tech);
     }
-    console.log(selectedTechs.value);
 }
 
 const onSelectContentChange = () => {

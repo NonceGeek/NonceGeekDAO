@@ -19,7 +19,7 @@
                         <div></div>
                     </div>
                     <div class="card-content flex justify-between items-center">
-                        <img class="" :src="item.img" alt="">
+                        <img class="" :src="item.avatar" alt="">
                         <div class="v-line" style="height: 180px;"></div>
                         <div class="card-bottom-right flex flex-col justify-evenly">
                             <div>
@@ -27,7 +27,7 @@
                                 <span class="sub-title">{{ item.subTitle }}</span>
                             </div>
                             <div class="line" style="width: 680px;"></div>
-                            <span class="des">{{ item.des }}</span>
+                            <span class="des">{{ item.description }}</span>
                         </div>
                     </div>
                 </div>
@@ -40,38 +40,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import partner_moonbeam from '../assets/partner_moonbeam.png'
-import partner_polygon from '../assets/partner_polygon.png'
-import partner_wanxiang from '../assets/partner_wanxiang.png'
-import partner_starcoin from '../assets/partner_starcoin.png'
+import { ref, onMounted } from 'vue'
+import { fetchPartners } from '../utils'
 
-const partners = ref([
-    {
-        img: partner_moonbeam,
-        title: 'Moonbeam',
-        subTitle: 'Grant for TaiShang NFT Parser& Wallet',
-        des: 'Moonbeam是一条面向开发者的区块链，它致力于提供与现有以太坊开发人员工具链和网络的兼容性。它通过提供完整的EVM、与Web3兼容的API以及将Moonbeam连接到现有以太坊网络的网桥来实现这一点。',
-    },
-    {
-        img: partner_polygon,
-        title: 'Polygon',
-        subTitle: 'Grant for TaiShang World Generator',
-        des: 'Polygon是一个建立在以太坊上的Layer2扩展解决方案上的公链。和以太坊比起来，Polygon的速度、可扩展性和可用性都更加有优势。作为后起之秀，Polygon着重布局在区块链游戏和NFT领域。',
-    },
-    {
-        img: partner_wanxiang,
-        title: '万向',
-        subTitle: ' Grant for 基于联盟链的合规元宇宙',
-        des: '万向区块链是区块链技术研发机构，逐步打造了集万向区块链实验室、万向区块链商业创新咨询、新链加速器、万云等业务于一体的区块链生态平台。',
-    },
-    {
-        img: partner_starcoin,
-        title: 'Starcoin',
-        subTitle: 'Tokens for 基于 Move-Lang 与 Starcoin 的学术研究',
-        des: 'Starcoin 是一个去中心化分层智能合约网络，它旨在提供一种安全的数字资产及去中心化金融运行平台，让区块链能够更低门槛应用在更多领域。',
-    },
-])
+const partners = ref([]);
+onMounted(() => {
+    fetchPartners().then(response => partners.value = response);
+});
 </script>
 
 <style scoped>
@@ -159,6 +134,7 @@ const partners = ref([
 }
 
 .card-content>img {
+    width: 178px;
     margin-left: 26px;
 }
 
