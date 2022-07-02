@@ -27,9 +27,7 @@
                         </div>
                     </div>
                     <div class="select-content flex flex-col justify-evenly" v-if="isShowSelectContent">
-                        <!-- <div class="flex justify-evenly"> -->
                         <div class="flex justify-start">
-
                             <div class="item-box" @click="onTechChange('UI/UX')">
                                 <span class="item center"
                                     :style="{ backgroundColor: selectedTechs.includes('UI/UX') ? '' : '#D5D5D5' }">UI/UX</span>
@@ -70,10 +68,10 @@
                             <div></div>
                             <div></div>
                         </div>
-                        <img :src="item.img" alt="">
+                        <img :src="item.avatar" alt="">
                         <span class="name">{{ item.name }}</span>
                         <div class="line" style="width: 208px;"></div>
-                        <span class="des">{{ item.des }}</span>
+                        <span class="des">{{ item.description }}</span>
                         <div class="flex justify-end w-full mr-5 mb-2.5">
                             <div class="tag-item" v-for="t in item.tag" :key="t">{{ t }}</div>
                         </div>
@@ -81,7 +79,6 @@
                     </div>
                     <i v-if="filtedBuilders.length > 4"></i>
                     <i v-if="filtedBuilders.length > 4"></i>
-                    <!-- <i v-if="filtedBuilders.length > 8"></i> -->
                 </div>
 
             </div>
@@ -93,53 +90,13 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { fetchArtists } from '../utils'
 
-import avatar_Kei from '../assets/avatar_Kei.png'
-import avatar_Pixie from '../assets/avatar_Pixie.png'
-import avatar_Nano from '../assets/avatar_Nano.png'
-import avatar_Peizhi from '../assets/avatar_Peizhi.png'
-import avatar_Tony from '../assets/avatar_Tony.png'
-import avatar_Weiyi from '../assets/avatar_Weiyi.png'
-
-const builders = ref([
-    {
-        name: 'Kei',
-        img: avatar_Kei,
-        des: '一个价值投资小能手。全职摸鱼大王，兼职产品经理',
-        tag: ['PM'],
-    },
-    {
-        name: 'Pixie',
-        img: avatar_Pixie,
-        des: 'illustrator and visual artist based in Shanghai. Paintings that I draw in my small tea table.',
-        tag: ['Illustration'],
-    },
-    {
-        name: 'Nano',
-        img: avatar_Nano,
-        des: '一个搞游戏化设计的兼职UI设计师 不可多得的照猫画虎小天才',
-        tag: ['UI/UX'],
-    },
-    {
-        name: 'Peizhi',
-        img: avatar_Peizhi,
-        des: '致力于探索人与产品间互动体验的可能性',
-        tag: ['UI/UX'],
-    },
-    {
-        name: 'Tony',
-        img: avatar_Tony,
-        des: '互联网重体力劳工，曾在多家独角兽公司搬砖',
-        tag: ['Full Stack'],
-    },
-    {
-        name: 'Weiyi',
-        img: avatar_Weiyi,
-        des: '把创造和被创造的还给人类',
-        tag: ['UI/UX'],
-    },
-])
+const builders = ref([]);
+onMounted(() => {
+    fetchArtists().then(response => builders.value = response);
+});
 
 let selectedTechs = ref(['UI/UX']);
 const isShowSelectContent = ref(true);
@@ -148,10 +105,6 @@ const filtedBuilders = computed(() => {
         return builder.tag.some(tag => selectedTechs.value.includes(tag));
     });
 });
-
-const filterByTechBuidlers = () => {
-
-}
 
 const onTechChange = (tech) => {
     console.log(tech);
@@ -173,7 +126,6 @@ const onSelectContentChange = () => {
 <style scoped>
 .window {
     width: 1120px;
-    /* height: 1748px; */
     background-color: #D4D4D4;
     margin-top: 77px;
 }
