@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Blox';
+  src: url('./fonts/Blox.ttf');
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('./fonts/Minecraft.ttf');
+}
+
 .line {
     height: 2px;
     border-top: 1px solid #989898;

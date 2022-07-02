@@ -6,9 +6,9 @@
     <div class="box center">
         <div class="window">
             <img class="home-bg" src="../assets/home_bg.png" alt="">
-            <span class="title">Nonce Geek studio.exe</span>
-            <img class="home-icon-big" src="../assets/home_icon_big.png" alt="home icon">
-            <img class="geek-studio" src="../assets/geek_studio.png" alt="geek studio">
+            <span class="title">Nonce Geek DAO.exe</span>
+            <span class="absolute top-[250px] left-[150px] font-blox text-bluedeep text-7xl">NoNceGEEK</span>
+            <span class="absolute top-[360px] left-[250px] font-minecraft text-bluedeep text-3xl">DAO</span>
             <img class="sub-bg" src="../assets/sub_bg.png" alt="sub bg">
         </div>
 
@@ -45,22 +45,6 @@
     position: absolute;
     top: 204px;
     left: 100px;
-}
-
-.home-icon-big {
-    width: 304px;
-    height: 112px;
-    position: absolute;
-    top: 249px;
-    left: 148px;
-}
-
-.geek-studio {
-    width: 289px;
-    height: 36px;
-    position: absolute;
-    top: 366px;
-    left: 155px;
 }
 
 .sub-bg {

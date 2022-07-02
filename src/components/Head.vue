@@ -38,17 +38,23 @@ const nav = (name) => {
 
 <template>
     <div class="box">
-        <img src="../assets/home_icon.png" class="home-icon" alt="home">
-        <div :class="{ 'head-item': true, 'head-item-clicked': clickedItem === item.name }" v-for="item in heads"
-            :key="item.name" @click="nav(item.name)">{{
-                    item.des
-            }}</div>
+        <span class="font-blox text-blue text-5xl">NoNceGEEK</span>
+        <div class="navs flex justify-end items-center">
+            <div
+                :class="{ 'ml-3 head-item': true, 'head-item-clicked': clickedItem === item.name }"
+                v-for="item in heads"
+                :key="item.name"
+                @click="nav(item.name)"
+            >
+                {{item.des}}
+            </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
 .box {
-    width: 1200px;
+    width: 1320px;
     height: 86.42px;
     margin: 0 auto;
     padding-top: 34px;
@@ -57,11 +63,6 @@ const nav = (name) => {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-.home-icon {
-    width: 142px;
-    height: 52px;
 }
 
 .head-item {
