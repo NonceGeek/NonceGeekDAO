@@ -1,5 +1,5 @@
 <script setup>
-
+// TODO：背景动起来 + 蒸汽波音乐
 </script>
 
 <template>
@@ -10,7 +10,7 @@
             <span class="title">Nonce Geek DAO.exe</span>
             <span class="absolute top-[265px] left-[140px] font-blox text-bluedeep text-7xl">NoNceGEEK</span>
             <span class="absolute top-[360px] left-[273px] font-minecraft text-bluedeep text-3xl">DAO</span>
-            
+
             <img class="sub-bg" src="../assets/sub_bg.png" alt="sub bg">
         </div>
 
