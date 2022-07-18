@@ -4,7 +4,7 @@
         <div class="window">
             <div class="top">
                 <img src="../assets/tiny_logo.png" alt="">
-                <span>Project 0x01 TaiShangVerse | 基于DID 与 NFT 的太上 Web3.0 世界.exe</span>
+                <span>Project 0x01 TaiShangVerse | TaiShang 宇宙.exe</span>
             </div>
             <div class="content">
                 <div class="events">
@@ -23,6 +23,7 @@
                     <div class="award-left">
                         <div class="window-bar" style="height: 33px;">NFT类</div>
                         <div class="flex flex-col justify-evenly" style="height: calc(100% - 31px);">
+                            <a href = "https://github.com/WeLightProject/tai-shang-nft-parser">
                             <div class="flex justify-evenly items-center">
                                 <span class="point"></span>
                                 <span class="award-title" style="width: 266px;">TaiShang NFT Renderer</span>
@@ -31,7 +32,9 @@
                                     <span class="award-des">Moonbeam Grant</span>
                                 </div>
                             </div>
+                            </a>
                             <div class="line" style="width: 450px;"></div>
+                            <a href = "https://github.com/WeLightProject/Tai-Shang-NFT-Wallet">
                             <div class="flex justify-evenly items-center">
                                 <span class="point"></span>
                                 <span class="award-title" style="width: 266px;">TaiShang NFT Wallet</span>
@@ -40,7 +43,9 @@
                                     <span class="award-des">Moonbeam Grant</span>
                                 </div>
                             </div>
+                            </a>
                             <div class="line" style="width: 450px;"></div>
+                            <a href="https://github.com/WeLightProject/Tai-Shang-Combiner">
                             <div class="flex justify-evenly items-center">
                                 <span class="point"></span>
                                 <span class="award-title" style="width: 266px;">TaiShang NFT Combiner</span>
@@ -48,7 +53,9 @@
                                     <span class="award-des">波卡夏季黑客送二等奖</span>
                                 </div>
                             </div>
+                            </a>
                             <div class="line" style="width: 450px;"></div>
+                            <a href="https://github.com/WeLightProject/tai_shang_nft_gallery">
                             <div class="flex justify-evenly items-center">
                                 <span class="point"></span>
                                 <span class="award-title" style="width: 266px;">TaiShang NFT Gallery</span>
@@ -56,12 +63,14 @@
                                     <span class="award-des">已正式上线</span>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div class="award-right">
                         <div class="award-right-top">
                             <div class="window-bar flex justify-center items-center" style="height: 38px;">Metaverse 类
                             </div>
+                            <a href="https://github.com/WeLightProject/tai_shang_world_generator">
                             <div class="flex justify-evenly items-center" style="height: calc(100% - 38px);">
                                 <div class="flex flex-col items-center">
                                     <div class="flex justify-evenly items-center" style="width: 279px;">
@@ -76,10 +85,12 @@
                                     <span class="award-des">Polygon Grant</span>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="award-right-bottom">
                             <div class="window-bar flex justify-center items-center" style="height: 38px;">Education 类
                             </div>
+                            <a href="https://github.com/WeLightProject/WeLightBlockchainOS">
                             <div class="flex justify-evenly items-center" style="height: calc(100% - 38px);">
                                 <div class="flex justify-evenly items-center" style="width: 279px;">
                                     <span class="point"></span>
@@ -91,12 +102,15 @@
                                     <span class="award-des">二等奖</span>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="content-bottom flex flex-col justify-center items-center">
+                    <a href="https://github.com/WeLightProject/tai_shang_micro_faas_system">
                     <span>Faas 系统</span>
                     <span>(Arweave)</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -183,7 +197,7 @@ const events = ref([
     font-family: 'Source Han Sans CN';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
     color: #02083C;
     width: 100%;
@@ -211,7 +225,7 @@ const events = ref([
     font-family: 'Source Han Sans CN';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 30px;
     color: #02083C;
     padding-left: 10px;

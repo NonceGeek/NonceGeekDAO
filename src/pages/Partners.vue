@@ -13,6 +13,7 @@
                 <span class="select-title">Nonce Geek Partners</span>
 
                 <div class="card" v-for="item in partners" :key="item.name">
+                    <a :href="item.link" target="_blank">
                     <div class="card-top flex justify-end items-center">
                         <div></div>
                         <div></div>
@@ -30,6 +31,7 @@
                             <span class="des">{{ item.description }}</span>
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
 

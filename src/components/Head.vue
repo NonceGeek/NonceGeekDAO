@@ -9,9 +9,6 @@ const heads = ref([{
     name: 'series',
     des: 'TaiShang Series',
 }, {
-    name: 'camp',
-    des: 'Web3.0 dApp Camp',
-}, {
     name: 'builders',
     des: 'Builders',
 },
