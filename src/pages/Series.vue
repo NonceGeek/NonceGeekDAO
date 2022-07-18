@@ -24,23 +24,23 @@
                         <div class="window-bar" style="height: 33px;">NFT类</div>
                         <div class="flex flex-col justify-evenly" style="height: calc(100% - 31px);">
                             <a href = "https://github.com/WeLightProject/tai-shang-nft-parser">
-                            <div class="flex justify-evenly items-center">
-                                <span class="point"></span>
-                                <span class="award-title" style="width: 266px;">TaiShang NFT Renderer</span>
-                                <div class="flex flex-col">
-                                    <span class="award-des">万向黑客松二等奖</span>
-                                    <span class="award-des">Moonbeam Grant</span>
+                                <div class="flex justify-evenly items-center">
+                                    <span class="point"></span>
+                                    <span class="award-title" style="width: 266px;">TaiShang DAONFT&NFT Renderer</span>
+                                    <div class="flex flex-col">
+                                        <span class="award-des">2021万向黑客松二等奖</span>
+                                        <span class="award-des">Moonbeam Grant</span>
+                                    </div>
                                 </div>
-                            </div>
                             </a>
                             <div class="line" style="width: 450px;"></div>
-                            <a href = "https://github.com/WeLightProject/Tai-Shang-NFT-Wallet">
+                            <a href = "https://github.com/WeLightProject/Tai-Shang-Soul-Card">
                             <div class="flex justify-evenly items-center">
                                 <span class="point"></span>
-                                <span class="award-title" style="width: 266px;">TaiShang NFT Wallet</span>
+                                <span class="award-title" style="width: 266px;">TaiShang SoulCard</span>
                                 <div class="flex flex-col">
-                                    <span class="award-des">万向黑客松二等奖</span>
-                                    <span class="award-des">Moonbeam Grant</span>
+                                    <span class="award-des">波卡2022夏季黑客松高校奖</span>
+                                    <span class="award-des">ETHShanghai Moonbeam赛道奖</span>
                                 </div>
                             </div>
                             </a>
@@ -50,7 +50,7 @@
                                 <span class="point"></span>
                                 <span class="award-title" style="width: 266px;">TaiShang NFT Combiner</span>
                                 <div class="flex flex-col">
-                                    <span class="award-des">波卡夏季黑客送二等奖</span>
+                                    <span class="award-des">2022波卡夏季黑客松二等奖</span>
                                 </div>
                             </div>
                             </a>
@@ -77,12 +77,12 @@
                                         <span class="point"></span>
                                         <span class="award-title">TaiShangWorldGenerator</span>
                                     </div>
-                                    <div class="award-title" style="font-size: 15px; width: 200px;">Polygon内测中...</div>
+                                    <div class="award-title" style="font-size: 15px; width: 200px;">Polygon/Venachain</div>
                                 </div>
                                 <div class="flex flex-col">
-                                    <span class="award-des">Polygon CN</span>
-                                    <span class="award-des">游戏开发大赛二等奖</span>
+                                    <span class="award-des">PolygonCN游戏开发大赛二等奖</span>
                                     <span class="award-des">Polygon Grant</span>
+                                    <span class="award-des">2022万向黑客松Venachain赛道一等奖</span>
                                 </div>
                             </div>
                             </a>
@@ -98,8 +98,7 @@
                                 </div>
                                 <div class="flex flex-col">
                                     <span class="award-des">第四届/第五届</span>
-                                    <span class="award-des">中国区块链大赛</span>
-                                    <span class="award-des">二等奖</span>
+                                    <span class="award-des">中国区块链大赛二等奖</span>
                                 </div>
                             </div>
                             </a>
@@ -123,19 +122,19 @@ import { ref } from 'vue'
 
 const events = ref([
     {
-        title: 'Online Camp',
+        title: 'Online Camp // TODO: add link',
     },
     {
-        title: 'Offline Workshop',
+        title: 'Offline Workshop // TODO: add link',
     },
     {
-        title: '悬赏任务',
+        title: '悬赏任务 // TODO: add link',
     },
     {
-        title: 'TaiShangVerse 解谜',
+        title: 'TaiShangVerse 解谜（规划中）',
     },
     {
-        title: 'NonceGeek Lab',
+        title: '反共识实验室 // TODO: add link',
     },
 ])
 
@@ -280,8 +279,8 @@ const events = ref([
     font-family: 'Source Han Sans CN';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 10 px;
+    line-height: 30 px;
     color: #02083C;
 }
 
@@ -292,7 +291,7 @@ const events = ref([
     font-size: 14px;
     line-height: 140%;
     color: #02083C;
-    width: 140px;
+    width: 220px;
 }
 
 .award-right-top {

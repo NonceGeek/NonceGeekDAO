@@ -4,8 +4,11 @@ import router from '../router';
 
 const heads = ref([{
     name: 'home',
-    des: 'Introduction',
+    des: 'Index',
 }, {
+    name: 'whitepaper',
+    des: 'WhitePaper v1',
+},{
     name: 'series',
     des: 'TaiShang Series',
 }, {
