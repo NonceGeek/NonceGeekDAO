@@ -1,5 +1,4 @@
 import Home from '../pages/Home.vue';
-import Impl from '../pages/Impl.vue';
 import Series from '../pages/Series.vue';
 import Camp from '../pages/Camp.vue';
 import Builders from '../pages/Builders.vue';
@@ -11,7 +10,6 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 const routes = [
     { path: '/', name: 'home', component: Home },
-    { path: '/Impl', name: 'Impl', component: Impl },
     { path: '/whitepaper', name: 'whitepaper', component: WhitePaper },
     { path: '/series', name: 'series', component: Series },
     { path: '/camp', name: 'camp', component: Camp },

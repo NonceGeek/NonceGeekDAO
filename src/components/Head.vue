@@ -6,9 +6,6 @@ const heads = ref([{
     name: 'home',
     des: 'Index',
 }, {
-  name: 'Impl',
-  des: 'Impl',
-}, {
     name: 'whitepaper',
     des: 'WhitePaper v1',
 },{
