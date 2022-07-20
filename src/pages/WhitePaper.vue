@@ -14,6 +14,10 @@
         html
       };
     },
+    created() {
+      // 处理标签居中
+      this.html = html.replace(/h1/g,"h1 align=\"center\"")
+    }
   };
 </script>
 <style scoped>
