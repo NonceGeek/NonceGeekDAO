@@ -10,7 +10,9 @@
                 <div class="events">
                     <div class="events-top">各类活动</div>
                     <div class="events-bottom">
-                        <div v-for="item in events" :key="item.title">{{ item.title }}</div>
+                        <a v-for="item in events" :href='item.link'>
+                            <div :key=item.title>{{ item.title }}</div>
+                        </a>
                     </div>
                 </div>
                 <div class="line" style="width: 1018px;"></div>
@@ -121,21 +123,25 @@
 import { ref } from 'vue'
 
 const events = ref([
-    {
-        title: 'Online Camp // TODO: add link',
-    },
-    {
-        title: 'Offline Workshop // TODO: add link',
-    },
-    {
-        title: '悬赏任务 // TODO: add link',
-    },
-    {
-        title: 'TaiShangVerse 解谜（规划中）',
-    },
-    {
-        title: '反共识实验室 // TODO: add link',
-    },
+  {
+    title: 'Online Camp',
+    link: 'https://github.com/WeLightProject/Web3-dApp-Camp/discussions',
+  },
+  {
+    title: 'Offline Workshop',
+    link: 'https://github.com/WeLightProject/Web3-dApp-Camp/discussions/categories/workshop'
+  },
+  {
+    title: '悬赏任务',
+    link: 'https://dao.noncegeek.com',
+  },
+  {
+    title: 'TaiShangVerse 解谜（规划中）',
+  },
+  {
+    title: '反共识实验室',
+    link: 'https://github.com/WeLightProject/AntiConsensusLab',
+  },
 ])
 
 </script>
@@ -214,7 +220,7 @@ const events = ref([
     align-items: center;
 }
 
-.events-bottom>div {
+.events-bottom>a>div {
     width: 156px;
     height: 80px;
     box-shadow: inset 1px 1px 0px #FFFFFF, inset -2px -2px 1px rgba(0, 0, 0, 0.8), inset 2px 2px 1px rgba(255, 255, 255, 0.8);
