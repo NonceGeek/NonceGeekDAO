@@ -18,7 +18,8 @@
     },
     created() {
       // 处理标签居中
-      this.html = html.replace(/h1/g,"h1 align=\"center\"")
+      this.html = this.html.replace(/h1/g,"h1 align=\"center\"")
+      this.html = this.html.replace(/h2/g,"h1 align=\"center\"")
     }
   };
 </script>
