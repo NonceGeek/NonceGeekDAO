@@ -9,11 +9,11 @@ const heads = ref([{
     name: 'whitepaper',
     des: 'WhitePaper v1',
 },{
-    name: 'series',
-    des: 'TaiShang Series',
+    name: 'projects',
+    des: 'cOOl Projects',
 }, {
-    name: 'builders',
-    des: 'Builders',
+    name: 'buidlers',
+    des: 'Buidlers',
 },
 {
     name: 'artist',
@@ -31,14 +31,22 @@ const clickedItem = ref('home');
 
 const nav = (name) => {
     clickedItem.value = name;
-    router.push({ name: name });
+    if(name=="partners"){
+        window.location.href = "https://noncegeek.notion.site/822c09f42d324d00b3e152e74997322b?v=105eea10cf4b4ec1928984221fdc0408";
+    }else if(name=="buidlers"){
+        window.location.href = "https://noncegeek.notion.site/7e57db9727444b41ba963ce2e5e9ca5a?v=3571cec630584c0b9e9a4f2349a8970c";
+    }else if(name=="projects"){
+        window.location.href = "https://github.com/NonceGeek";
+    }else{
+        router.push({ name: name });
+    }
 }
 
 </script>
 
 <template>
     <div class="box">
-        <span class="font-blox text-blue text-5xl">NoNceGEEK</span>
+        <span class="font-blox text-blue text-5xl">&nbsp;&nbsp;NoNceGEEK DAO</span>
         <div class="navs flex justify-end items-center">
             <div
                 :class="{ 'ml-3 head-item': true, 'head-item-clicked': clickedItem === item.name }"

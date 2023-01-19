@@ -16,7 +16,7 @@
                         <span class="wechat-id">lee_duck_go</span>
                     </div>
                     <div class="flex items-end">
-                        <span class="wechat-id">Telegram: @leeduckgo // TODO</span>
+                        <span class="wechat-id">Telegram: @leeduckgo </span>
                     </div>
                 </div>
                 <div style="width: 26.5px; height: 356px;" class="flex flex-col justify-between">
