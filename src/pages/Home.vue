@@ -7,6 +7,7 @@
     <br>
     <br>
     <center>
+        <br><br><br>
         <p class="text-2xl font-minecraft" style="color:white;">NonceGeekDAO is a "distributed DAO with an unconventional corporate system for developers/founders" </p>
         <br>
         <p class="text-2xl font-minecraft" style="color:white;">The vision of NonceGeekDAO is "to let DAO members gain personal growth and achieve the ultimate positive impact in DAO internal entrepreneurship".</p>
