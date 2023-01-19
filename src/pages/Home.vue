@@ -15,7 +15,7 @@
         <br>
     </center>
     <div class="box center">
-        <div class="window">
+        <!-- <div class="window">
             <img class="home-bg" src="../assets/home_bg.png" alt="">
 
             <span class="title">Nonce-Geek-DAO.exe</span>
@@ -23,7 +23,7 @@
             <span class="absolute top-[340px] left-[273px] font-blox text-bluedeep text-7xl">dao</span>
 
             <img class="sub-bg" src="../assets/sub_bg.png" alt="sub bg">
-        </div>
+        </div> -->
 
     </div>
 </template>
