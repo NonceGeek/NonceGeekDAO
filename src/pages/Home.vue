@@ -1,15 +1,26 @@
 <script setup>
-// TODO：背景动起来 + 蒸汽波音乐
+// TODO：背景动起来 + 蒸汽波音乐 + Footer
 </script>
 
 <template>
+    <br>
+    <br>
+    <br>
+    <center>
+        <p class="text-2xl font-minecraft" style="color:white;">NonceGeekDAO is a "distributed DAO with an unconventional corporate system for developers/founders" </p>
+        <br>
+        <p class="text-2xl font-minecraft" style="color:white;">The vision of NonceGeekDAO is "to let DAO members gain personal growth and achieve the ultimate positive impact in DAO internal entrepreneurship".</p>
+        <br>
+        <p class="text-2xl font-minecraft" style="color:white;">The slogan of NonceGeekDAO is "cool-oriented programming".</p>
+        <br>
+    </center>
     <div class="box center">
         <div class="window">
             <img class="home-bg" src="../assets/home_bg.png" alt="">
 
             <span class="title">Nonce-Geek-DAO.exe</span>
-            <span class="absolute top-[265px] left-[140px] font-blox text-bluedeep text-7xl">NoNceGEEK</span>
-            <span class="absolute top-[350px] left-[273px] font-blox text-bluedeep text-7xl">dao</span>
+            <span class="absolute top-[250px] left-[140px] font-blox text-bluedeep text-7xl">NoNceGEEK</span>
+            <span class="absolute top-[340px] left-[273px] font-blox text-bluedeep text-7xl">dao</span>
 
             <img class="sub-bg" src="../assets/sub_bg.png" alt="sub bg">
         </div>
@@ -26,7 +37,7 @@
 .window {
     position: relative;
     width: 1202px;
-    height: 563px;
+    height: 1000px;
 }
 
 .home-bg {
