@@ -20,9 +20,9 @@ const heads = ref([{
     name: 'buidlers',
     des: 'Buidlers',
 }, {
-//     name: 'partners',
-//     des: 'Partners',
-// }, {
+    name: 'blog',
+    des: 'Bl0g',
+}, {
     name: 'about',
     des: 'About',
 }]);
@@ -39,6 +39,8 @@ const nav = (name) => {
         window.location.href = "https://projects.noncegeek.com";
     }else if(name=="github"){
         window.location.href = "https://github.com/NonceGeek";
+    }else if(name=="blog"){
+        window.location.href = "https://blog.noncegeek.com";
     }else{
         router.push({ name: name });
     }
