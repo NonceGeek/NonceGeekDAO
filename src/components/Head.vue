@@ -11,18 +11,18 @@ const heads = ref([{
 },{
     name: 'projects',
     des: 'cOOl Projects',
-}, {
+}, 
+{
+    name: 'github',
+    des: 'Github',
+},
+{
     name: 'buidlers',
     des: 'Buidlers',
-},
-{
-    name: 'artist',
-    des: 'Artist',
-},
-{
-    name: 'partners',
-    des: 'Partners',
 }, {
+//     name: 'partners',
+//     des: 'Partners',
+// }, {
     name: 'about',
     des: 'About',
 }]);
@@ -36,6 +36,8 @@ const nav = (name) => {
     }else if(name=="buidlers"){
         window.location.href = "https://noncegeek.notion.site/7e57db9727444b41ba963ce2e5e9ca5a?v=3571cec630584c0b9e9a4f2349a8970c";
     }else if(name=="projects"){
+        window.location.href = "https://projects.noncegeek.com";
+    }else if(name=="github"){
         window.location.href = "https://github.com/NonceGeek";
     }else{
         router.push({ name: name });
