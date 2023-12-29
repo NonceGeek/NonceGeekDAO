@@ -27,9 +27,17 @@
         </div> -->
 
     </div>
+
+    <!-- Footer -->
+    <footer style="width: 100%; position: fixed; bottom: 0; background-color: transparent; color: white; text-align: center; padding: 10px 0;">
+        <p>𑖌𑖼 © 2023 NonceGeekDAO. All rights reserved. 𑖌𑖼</p>
+    </footer>
 </template>
 
+
+
 <style scoped>
+
 .box {
     width: calc(100vw - 86px);
     height: 100vh;
