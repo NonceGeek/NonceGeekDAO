@@ -8,7 +8,7 @@
     <br>
     <center>
         <br><br><br>
-        <p class="text-2xl font-minecraft" style="color:white;">NonceGeekDAO is a "AI-Friendly DAO with an unconventional corporate system for developers/founders" </p>
+        <p class="text-2xl font-minecraft" style="color:white;">NonceGeekDAO is an "AI-Friendly DAO with an unconventional corporate system for developers/founders" </p>
         <br>
         <p class="text-2xl font-minecraft" style="color:white;">The vision of NonceGeekDAO is "Helping Buidlers Gain Life Growth".</p>
         <br>
