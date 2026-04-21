@@ -8,7 +8,7 @@
 
 <script>
   import 'github-markdown-css/github-markdown.css';
-  import {html} from '../assets/NonceGeekDAO Whitepaper v1.md';
+  import {html} from '../assets/NonceGeekDAO_Whitepaper_v2.md';
   
   export default {
     data() {

@@ -7,7 +7,7 @@ const heads = ref([{
     des: 'Index',
 }, {
     name: 'whitepaper',
-    des: 'WhitePaper v1',
+    des: 'WhitePaper v2',
 },{
     name: 'projects',
     des: 'cOOl Projects',
@@ -16,13 +16,15 @@ const heads = ref([{
     name: 'github',
     des: 'Github',
 },
+// {
+//     name: 'buidlers',
+//     des: 'Buidlers',
+// }, 
+// {
+//     name: 'blog',
+//     des: 'Bl0g',
+// }, 
 {
-    name: 'buidlers',
-    des: 'Buidlers',
-}, {
-    name: 'blog',
-    des: 'Bl0g',
-}, {
     name: 'about',
     des: 'About',
 }]);

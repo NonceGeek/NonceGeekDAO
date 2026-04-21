@@ -8,9 +8,9 @@
     <br>
     <center>
         <br><br><br>
-        <p class="text-2xl font-minecraft" style="color:white;">NonceGeekDAO is a "distributed DAO with an unconventional corporate system for developers/founders" </p>
+        <p class="text-2xl font-minecraft" style="color:white;">NonceGeekDAO is a "AI-Friendly DAO with an unconventional corporate system for developers/founders" </p>
         <br>
-        <p class="text-2xl font-minecraft" style="color:white;">The vision of NonceGeekDAO is "Helping IndieHackers Gain Life Growth".</p>
+        <p class="text-2xl font-minecraft" style="color:white;">The vision of NonceGeekDAO is "Helping Buidlers Gain Life Growth".</p>
         <br>
         <p class="text-2xl font-minecraft" style="color:white;">The slogan of NonceGeekDAO is "cool-oriented programming".</p>
         <br>
@@ -30,7 +30,7 @@
 
     <!-- Footer -->
     <footer style="width: 100%; position: fixed; bottom: 0; background-color: transparent; color: white; text-align: center; padding: 10px 0;">
-        <p>𑖌𑖼 © 2023 NonceGeekDAO. All rights reserved. 𑖌𑖼</p>
+        <p>𑖌𑖼 © 2026 NonceGeekDAO. All rights reserved. 𑖌𑖼</p>
     </footer>
 </template>
 
